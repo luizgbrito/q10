@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+
+<script id="node">
+	"index.php" == window.location.href.split("/")[4] && window.history.pushState("object or string", "Title", "./");
+	const ss = sessionStorage;
+	const sURL = 'https://gotaq10.com.br'; 
+	const MOB = 'desktop';
+	const SA = 0;
+	
+	var urlBackRedirect = '';
+	if(urlBackRedirect!=''){
+		window.history.pushState(null, "", window.location.href);
+		window.onpopstate = function () {
+			window.history.pushState(null, "", window.location.href);
+			if(urlBackRedirect!=''){
+				location.href=urlBackRedirect;			
+			}else{
+				location.href=URL
+				//window.history.go(-1);
+			}
+		};
+	}
+	
+	const DT = "";
+	const ED = [0,{
+	"0":[
+		"TIPO",
+		"CSS",
+		"CONTEUDO"
+	]
+}];
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=5.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="icon" href="https://gotaq10.com.br/files/favicon.png">
+<title>Gota Q10</title>
+<meta name="description" content="Gota Q10">
+<meta itemprop="url" content="https://gotaq10.com.br">
+<link rel="canonical" href="https://gotaq10.com.br">
+<meta itemprop="image" content="https://gotaq10.com.br/files/logo.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gotaq10.com.br">
+<meta property="og:title" content="Gota Q10">
+<meta property="og:description" content="Gota Q10">
+<meta property="og:image" content="https://gotaq10.com.br/site/libs/img/capa.png">
+<meta property="og:site_name" content="Gota Q10">
+<meta property="og:locale" content="pt_BR">	
+<meta name="author" content="Randiclecio Moura">
+<meta name="robots" content="index, follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link lazyload href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+<link lazyload href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link lazyload href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.15/js/uikit.min.js" integrity="sha512-fAtkuxdFz6+UGhqi+TupOW5fEeyzQISRfefoWXsr+p/WeUUbjmAxZTQ2nY8BqvLwoh3+PMKWJeqtggitpdQ+Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.15/css/uikit.min.css" integrity="sha512-SpayEdTMPKR8AonZQ1ImafGz1bSwVToTfHiuSXfmlSgWlWIDnVVEepPO1C7eA4wtY6eb6Zu+sCcYbQKvtnXKUg==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'"/>
+<style>*:not(i),
+*:not(.wysiwyg) {
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	text-decoration: none;
+	outline: 0;
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Montserrat', sans-serif;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+}
+#flow,
+body,
+html {
+	height: 100%;
+}
+#flow,
+.uk-container {
+	width: 100%;
+}
+html {
+	position: relative;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	overflow: inherit;
+}
+#flow {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+#main {
+	flex-grow: 1;
+}
+.uk-container {
+	max-width: 1140px;
+	min-height: 30px;
+	margin: 0 auto !important;
+	transition: .1s;
+	position: relative;
+	z-index: 1;
+}
+.pulse {
+	-webkit-animation: pulse 1.5s linear infinite;
+	animation: pulse 1.5s linear infinite;
+	box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	25% {
+		opacity: .95;
+		box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+		transform: scale(.95);
+		border-radius: 15px;
+	}
+	75% {
+		border-radius: 30px;
+		transform: scale(1.05);
+		opacity: .95;
+		box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+	}
+}
+.pular {
+	-webkit-animation: pular 1.5s linear infinite;
+	animation: pular 1.5s linear infinite;
+}
+@keyframes pular {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	25% {
+		transform: scale(1.04);
+		opacity: .85;
+	}
+	75% {
+		transform: scale(.96);
+		opacity: .85;
+	}
+}
+.saltar:hover {
+	-webkit-animation: salt 1.5s linear infinite;
+	animation: salt 1.5s linear infinite;
+}
+@keyframes salt {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	25% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	75% {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+}
+.glows {
+	background: linear-gradient(269deg, #eb7721, #f8a636, #be5d13);
+	background-size: 600% 600%;
+	-webkit-animation: glows 4s ease infinite;
+	animation: glows 4s ease infinite;
+}
+@keyframes glows {
+	0% {
+		background-position: 0% 51%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 51%;
+	}
+}
+.giro::before {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 140%;
+	background: linear-gradient(#d6635c, #fbb714);
+	-webkit-animation: giros 4s linear infinite;
+	animation: giros 4s linear infinite;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+@keyframes giros {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.background-overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}</style>
+
+<link lazyload rel="stylesheet" href="https://gotaq10.com.br/site/libs/header.css?v230525165322" media="print" onload="this.media='all'"/>
+<link lazyload rel="stylesheet" href="https://gotaq10.com.br/site/libs/site.css?v230525165322" media="print" onload="this.media='all'"/>
+</head>
+<body>
+<section id="flow">
+<main id="main">
+<div class="topo">
+	<div class="uk-container">
+		<a class="logo" href="./">
+			<img src="https://gotaq10.com.br/files/d/2305161230330.svg" alt="Logo Gota Q10" width="200" height="200"  uk-img="loading: lazy">
+		</a>
+		<a class="rastreio" href="""" >Rastrear Pedido</a>
+	</div>
+	<div class="shape shape-bottom">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+			<path class="fill" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3	c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3	c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path>
+		</svg>
+	</div>
+</div>
+<div class="header">
+	<div class="folhas">
+		<img src="https://gotaq10.com.br/files/a/2305161827350.webp" alt="matéria base" width="135" height="283"  uk-img="loading: lazy">
+		<img src="https://gotaq10.com.br/files/a/2305161827351.webp" alt="matéria base" width="205" height="281"  uk-img="loading: lazy">
+	</div>
+	
+	<div class="uk-container">
+		<h1  >Acabe com os sintomas da diabetes em poucas horas!</h1>
+		<div class="dados">
+			<h2  >Novo produto americano que restaura sistema insulínico chega ao Brasil.</h2>
+			<ul>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<g>
+							<path d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+							<path d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+						</g>
+					</svg>
+					<span>Acabe com a Fadiga</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<g>
+							<path d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+							<path d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+						</g>
+					</svg>
+					<span>Coma sem restrições</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<g>
+							<path d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+							<path d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+						</g>
+					</svg>
+					<span>Aumente a Imunidade</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<g>
+							<path d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+							<path d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+						</g>
+					</svg>
+					<span>Controle o Fluxo Urinário</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<g>
+							<path d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+							<path d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+						</g>
+					</svg>
+					<span>Acabe Com os Formigamentos</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<g>
+							<path d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+							<path d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+						</g>
+					</svg>
+					<span>Sem embaçamento na visão</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<g>
+							<path d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+							<path d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+						</g>
+					</svg>
+					<span>Cicatrização Normalizada</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<g>
+							<path d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+							<path d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+						</g>
+					</svg>
+					<span>Sem enjoos</span>
+				</li>
+							</ul>
+		</div>
+		<figure><img src="https://gotaq10.com.br/files/a/2305161737380.webp" alt="Frasco Gota Q10" width="605" height="613"  uk-img="loading: lazy" class="produto"></figure>
+	</div>
+	<div class="link">
+		<a class="cta pular" href="./#oferta" >
+			<svg xmlns="http://www.w3.org/2000/svg" id="Camada_2" data-name="Camada 2" viewBox="0 0 383.3 346.14">
+				<defs>
+					<style>
+						.cls-1 {
+							fill: #fff;
+						}
+					</style>
+				</defs>
+				<g id="Camada_1-2" data-name="Camada 1">
+					<g>
+						<path class="cls-1" d="m383.3,120.8c-1.24,6.33-2.22,12.73-3.77,18.98-2.8,11.33-7.7,21.8-13.67,31.81-1.13,1.89-2.42,2.39-4.49,2.39-29.31-.06-58.63-.07-87.94.02-2.45,0-3.72-.7-4.9-2.91-12.07-22.65-24.26-45.23-36.46-67.81-3.47-6.43-9.63-9.15-15.15-5.98-2.68,1.54-5.05,4.47-6.42,7.32-14.19,29.52-28.14,59.16-42.17,88.76-.62,1.31-1.34,2.56-2.25,4.29-1.94-3.03-3.61-5.62-5.27-8.22-8.24-12.93-16.44-25.88-24.71-38.79-5.8-9.06-15.29-8.96-20.85.2-4.14,6.82-8.27,13.64-12.29,20.53-1.05,1.8-2.17,2.6-4.37,2.59-25.7-.08-51.39-.1-77.09.02-2.49.01-3.46-1.2-4.55-2.99C-20.49,109.43,7.73,37.78,66,10.91c42.14-19.43,81.56-12.02,118.1,15.09,2.49,1.85,4.86,3.87,6.96,5.55,8.15-5.49,15.77-11.38,24.05-16.1,72.02-41.06,152.08,6.96,165.98,75.67.84,4.14,1.47,8.31,2.2,12.47v17.22Z"></path>
+						<path class="cls-1" d="m36.77,196.4h4.66c21.45,0,42.9-.09,64.35.06,5.72.04,9.78-2.07,12.56-7.05,2.35-4.21,4.95-8.29,7.66-12.77,9.59,15.05,18.89,29.64,28.18,44.24.94,1.47,1.94,2.91,2.79,4.42,2.52,4.46,6.04,7.33,11.42,6.96,5.38-.37,8.31-3.83,10.42-8.44,4.21-9.17,8.59-18.25,12.9-27.37,10.02-21.15,20.04-42.3,30.35-64.05.89,1.51,1.57,2.59,2.18,3.72,9.39,17.43,18.87,34.82,28.11,52.34,2.96,5.61,7.1,8.06,13.47,8.01,25.19-.18,50.38-.07,75.57-.07,1.35,0,2.71,0,4.97,0-1.34,1.47-2.15,2.44-3.05,3.33-47.46,47.24-94.93,94.48-142.41,141.71-6.27,6.23-12.38,6.25-18.53.12-47.65-47.4-95.3-94.81-142.95-142.23-.75-.75-1.43-1.58-2.66-2.94Z"></path>
+					</g>
+				</g>
+			</svg>
+			<span>QUERO MEU GOTA Q10!</span>
+		</a>
+	</div>
+</div><div class="promessa um">
+	<div class="uk-container">
+		<h2  >Não deixe a diabetes controlar sua vida!</h2>
+		<h3  ><p>O <strong>GOTA Q10</strong> &eacute; indicado para quem tem doen&ccedil;as como</p>
+<p>diabetes, cardiovasculares, insufici&ecirc;ncia card&iacute;aca, que j&aacute;</p>
+<p>teve infarto, que tem hist&oacute;ricos de infarto na fam&iacute;lia,</p>
+<p>pessoas com colesterol elevado, fumantes.</p></h3>
+		<ul>
+						<li>
+				<img src="https://gotaq10.com.br/files/a/2305162017102.webp" alt="ESTABILIZA A GLICOSE" width="307" height="307"  uk-img="loading: lazy">
+				<h4  >ESTABILIZA A GLICOSE</h4>
+				<p  >Fórmula americana com óleo de<br />
+abacate sendo seus principais<br />
+componentes a lecitina, o beta<br />
+sitosterol, ômega 9 e as vitaminas<br />
+A, D, E e K, além de ácido fólico e<br />
+potássio. Esse conjunto faz do<br />
+Óleo de abacate um poderoso<br />
+estabilizador dos níveis de açúcar.</p>
+			</li>
+						<li>
+				<img src="https://gotaq10.com.br/files/a/2305162017101.webp" alt="CONTROLA O AÇÚCAR NO SANGUE" width="307" height="307"  uk-img="loading: lazy">
+				<h4  >CONTROLA O<br />
+AÇÚCAR NO SANGUE</h4>
+				<p  >Contendo também uma ultra<br />
+concentração de Coenzima Q10<br />
+que assim ajuda a diminuir os<br />
+picos de insulina.</p>
+			</li>
+						<li>
+				<img src="https://gotaq10.com.br/files/a/2305162017100.webp" alt="CÉREBRO ANTI-ALZHEIMER" width="307" height="307"  uk-img="loading: lazy">
+				<h4  >CÉREBRO<br />
+ANTI-ALZHEIMER</h4>
+				<p  >Prevenir o Alzheimer é<br />
+garantir que sua identidade,<br />
+autonomia e independência<br />
+fiquem preservadas durante<br />
+toda sua vida.</p>
+			</li>
+					</ul>
+	</div>
+</div><div class="oferta" id="oferta">
+	<div class="titulo">
+		<h2 class="uk-container"  >ESCOLHA A MELHOR OFERTA PARA VOCÊ</h2>
+	</div>
+	<div class="uk-container">
+		<h3  >FRASCO EXTRA + FRETE GRÁTIS SOMENTE HOJE!</h3>
+		<ul class="cards">
+<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/cam6751vj">
+    <img src="https://gotaq10.com.br/files/a/2305221857010.webp" alt="10 FRASCOS" width="319" height="763" uk-img="loading: lazy">
+  </a>
+</li>
+						<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/camrez6pv">
+    <img src="https://gotaq10.com.br/files/a/2305221857011.webp" alt="5 FRASCOS" width="243" height="531" uk-img="loading: lazy">
+  </a>
+</li>
+
+						<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/cam7pyzn1">
+    <img src="https://gotaq10.com.br/files/a/2305221857012.webp" alt="3 FRASCOS" width="243" height="531" uk-img="loading: lazy">
+  </a>
+</li>
+
+						<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/cam85ldr8">
+    <img src="https://gotaq10.com.br/files/a/2305221857013.webp" alt="1 FRASCO" width="243" height="528" uk-img="loading: lazy">
+  </a>
+</li>
+
+					</ul>
+	</div>
+</div><div class="promessa dois">
+	<div class="uk-container">
+		<ul>
+						<li>
+				<img src="https://gotaq10.com.br/files/a/2305171705120.webp" alt="AUMENTA A ENERGIA E DISPOSIÇÃO" width="150" height="150"  uk-img="loading: lazy">
+				<h4  >AUMENTA A ENERGIA<br />
+E DISPOSIÇÃO</h4>
+				<p  >Aumente sua energia<br />
+e disposição através de<br />
+uma formula exclusiva e<br />
+poderosa de Gota Q10 na<br />
+ajuda com a Diabetes.</p>
+			</li>
+						<li>
+				<img src="https://gotaq10.com.br/files/a/2305171705230.webp" alt="ESTIMULA A PRODUÇÃO DE INSULINA" width="150" height="150"  uk-img="loading: lazy">
+				<h4  >ESTIMULA A PRODUÇÃO<br />
+DE INSULINA</h4>
+				<p  >A formula exclusiva de<br />
+Gota Q10 estimula a produção<br />
+de insulina no corpo, o que<br />
+melhora a disposição e o<br />
+bem estar do dia a dia.</p>
+			</li>
+						<li>
+				<img src="https://gotaq10.com.br/files/a/2305171705231.webp" alt="CORAÇÃO ANTI-INFARTO" width="150" height="150"  uk-img="loading: lazy">
+				<h4  >CORAÇÃO<br />
+ANTI-INFARTO</h4>
+				<p  >O óleo de abacate previne<br />
+doenças cardiovasculares<br />
+devido ao seu alto teor de ácido<br />
+oleico, uma gordura<br />
+monoinsaturada que auxilia<br />
+na redução do LDL-colesterol<br />
+e aumento do HDL-colesterol.</p>
+			</li>
+					</ul>
+	</div>
+</div><div class="usos">
+	<div class="uk-container">
+		<h2  >QUAL O MODO DE USO?</h2>
+
+		<div class="uk-position-relative uk-visible" tabindex="-1" uk-slider>
+			<ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@m uk-grid">
+								<li>
+					<div class="uk-panel"><img src="https://gotaq10.com.br/files/d/2305171829382.svg" alt="processo 1" width="200" height="200"  uk-img="loading: lazy"></div>
+				</li>
+								<li>
+					<div class="uk-panel"><img src="https://gotaq10.com.br/files/d/2305171829381.svg" alt="processo 2" width="200" height="200"  uk-img="loading: lazy"></div>
+				</li>
+								<li>
+					<div class="uk-panel"><img src="https://gotaq10.com.br/files/d/2305171829380.svg" alt="processo 3" width="200" height="200"  uk-img="loading: lazy"></div>
+				</li>
+							</ul>
+			<div class="uk-light setas">
+				<a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+				<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+			</div>
+		</div>
+		<div class="link">
+			<a class="cta pular" href="./#oferta" >
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+				<span>QUERO MEU GOTA Q10!</span>
+			</a>
+		</div>
+	</div>
+	<div class="shape shape-bottom">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+			<path class="elementor-shape-fill" d="M1000,4.3V0H0v4.3C0.9,23.1,126.7,99.2,500,100S1000,22.7,1000,4.3z"></path>
+		</svg>
+	</div>
+</div><div class="sobre">
+	<div class="uk-container">
+		<img src="https://gotaq10.com.br/files/a/2305171908200.webp" alt="Gota Q10" width="413" height="183"  uk-img="loading: lazy">
+		<div class="text">
+			<h2  >QUAL O SEGREDO<br />
+DA NOSSA FÓRMULA?</h2>
+			<div  ><p>A <strong>exclusiva tecnologia</strong> americana feita do <strong>&Oacute;leo de abacate</strong> com aplica&ccedil;&atilde;o sublingual proporciona uma absor&ccedil;&atilde;o r&aacute;pida e eficaz por meio da gl&acirc;ndula que temos <strong>sob a l&iacute;ngua</strong>, nela vasos que acessam diretamente a corrente sangu&iacute;nea absorvem rapidamente seu conte&uacute;do e promovem resultados surpreendentes em pouqu&iacute;ssimo tempo, essa &eacute; a forma mais eficaz, garantindo at&eacute; <strong>97% de absor&ccedil;&atilde;o</strong> dos ativos da composi&ccedil;&atilde;o. Chegou o fim dos tratamentos invasivos, dolorosos e com resultado tempor&aacute;rio!</p></div>
+		</div>
+	</div>
+</div>
+<div class="formula">
+	<div class="uk-container">
+		<h2  >DESENVOLVIDO E RECOMENDADO<br />
+POR ESPECIALISTAS!</h2>
+		<h3  ><p>A f&oacute;rmula do <strong>GotaQ10</strong> cont&eacute;m uma exclusiva f&oacute;rmula com tecnologia</p>
+<p>avan&ccedil;ada e importada para melhorar o dia a dia de diab&eacute;ticos com uma</p>
+<p>&oacute;tima absor&ccedil;&atilde;o no organismo, deixando seus dias com mais energia e</p>
+<p>disposi&ccedil;&atilde;o com o controle da diabetes.</p></h3>
+		<ul>
+						<li>
+				<div class="back" style="background-image: url(https://gotaq10.com.br/files/d/2305171954150.svg);"  uk-img="loading: lazy"><figure></figure></div>
+				<img src="https://gotaq10.com.br/files/a/2305172010200.webp" alt="Coenzima Q10" width="150" height="150"  uk-img="loading: lazy">
+				<h4  >Coenzima Q10</h4>
+				<p  >A suplementação com<br />
+Coenzima Q10 ajuda a<br />
+aumentar a sensibilidade<br />
+à insulina e melhora os<br />
+níveis de açúcar no sangue.<br />
+Indispensável para diminuir<br />
+os picos de insulina.</p>
+			</li>
+						<li>
+				<div class="back" style="background-image: url(https://gotaq10.com.br/files/d/2305172007390.svg);"  uk-img="loading: lazy"><figure></figure></div>
+				<img src="https://gotaq10.com.br/files/a/2305172010201.webp" alt="Resveratrol Americano" width="150" height="150"  uk-img="loading: lazy">
+				<h4  >Resveratrol<br />
+Americano</h4>
+				<p  >A suplementação com resveratrol<br />
++ tratamento hipoglicêmico<br />
+convencional se mostra eficaz na<br />
+melhora de fatores de risco<br />
+cardiovasculares e do controle<br />
+glicêmico em pacientes com<br />
+diabetes. Assim o resveratrol<br />
+pode ser utilizado como terapia<br />
+adjuvante no manejo da diabetes.</p>
+			</li>
+						<li>
+				<div class="back" style="background-image: url(https://gotaq10.com.br/app/img/img.svg);"  uk-img="loading: lazy"><figure></figure></div>
+				<img src="https://gotaq10.com.br/files/a/2305172010202.webp" alt="Óleo de Abacate" width="150" height="150"  uk-img="loading: lazy">
+				<h4  >Óleo de Abacate</h4>
+				<p  >Óleo de abacate tem como<br />
+principais componentes a<br />
+lecitina, o beta-sitosterol,<br />
+ômega 9 e as vitaminas A,<br />
+D, E e K, além de ácido fólico<br />
+e potássio. auxilia na prevenção<br />
+e controle de diversas doenças,<br />
+como diabetes e colesterol alto.</p>
+			</li>
+						<li>
+				<div class="back" style="background-image: url(https://gotaq10.com.br/app/img/img.svg);"  uk-img="loading: lazy"><figure></figure></div>
+				<img src="https://gotaq10.com.br/files/a/2305172010203.webp" alt="Asta xantina" width="150" height="150"  uk-img="loading: lazy">
+				<h4  >Asta xantina</h4>
+				<p  >Asta xantina em Pacientes<br />
+Diabéticos Melhora os<br />
+Marcadores da Inflamação<br />
+e do Estresse Oxidativo.<br />
+A Asta xantina é um carotenoide<br />
+que pertence à classe das<br />
+xantofilas e possui capacidade<br />
+antioxidante e possível papel<br />
+na redução do risco de<br />
+algumas doenças.</p>
+			</li>
+						<li>
+				<div class="back" style="background-image: url(https://gotaq10.com.br/app/img/img.svg);"  uk-img="loading: lazy"><figure></figure></div>
+				<img src="https://gotaq10.com.br/files/a/2305172010204.webp" alt="Vitamina C" width="150" height="150"  uk-img="loading: lazy">
+				<h4  >Vitamina C</h4>
+				<p  >Astaxantina em Pacientes<br />
+Diabéticos Melhora os<br />
+Marcadores da Inflamação<br />
+e do Estresse Oxidativo.<br />
+A Asta xantina é um carotenoide<br />
+que pertence à classe das<br />
+xantofilas e possui capacidade<br />
+antioxidante e possível papel<br />
+na redução do risco de<br />
+algumas doenças.</p>
+			</li>
+						<li>
+				<div class="back" style="background-image: url(https://gotaq10.com.br/app/img/img.svg);"  uk-img="loading: lazy"><figure></figure></div>
+				<img src="https://gotaq10.com.br/files/a/2305172010205.webp" alt="Vitamina E" width="150" height="150"  uk-img="loading: lazy">
+				<h4  >Vitamina E</h4>
+				<p  >Além disso, um estudo<br />
+publicado no Journal of<br />
+Clinical & Diagnostic Research<br />
+descobriu que a suplementação<br />
+de vitamina E ajuda a retardar o<br />
+aparecimento das complicações<br />
+do diabetes, bem como a<br />
+evitar a progressão de suas<br />
+complicações.</p>
+			</li>
+					</ul>
+		<div class="link">
+			<a class="cta pular" href="./#oferta" >
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+				<span>QUERO MEU GOTA Q10!</span>
+			</a>
+		</div>
+	</div>
+</div><div class="promessa3">
+	<div class="uk-container">
+		<figure>
+			<h2  >RECUPERE A FELICIDADE<br />
+DE VIVER COM DIAS MAIS<br />
+TRANQUILOS E SAUDÁVEIS</h2>
+			<img src="https://gotaq10.com.br/files/a/2305172054080.webp" alt="RECUPERE A FELICIDADE DE VIVER COM DIAS MAIS TRANQUILOS E SAUDÁVEIS" width="442" height="307"  uk-img="loading: lazy" class="produto">
+		</figure>
+		<div class="dados">
+			<h3  >Você também merece ser livre  dos sintomas da diabetes!</h3>
+			<ul>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" id="Camada_2" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<defs>
+							<style>
+								.cls-1 {
+									fill: #fff;
+								}
+							</style>
+						</defs>
+						<g id="Camada_1-2" data-name="Camada 1">
+							<g>
+								<path class="cls-1" d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+								<path class="cls-1" d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+							</g>
+						</g>
+					</svg>
+					<span>Acabe com a Fadiga</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" id="Camada_2" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<defs>
+							<style>
+								.cls-1 {
+									fill: #fff;
+								}
+							</style>
+						</defs>
+						<g id="Camada_1-2" data-name="Camada 1">
+							<g>
+								<path class="cls-1" d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+								<path class="cls-1" d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+							</g>
+						</g>
+					</svg>
+					<span>Coma sem restrições</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" id="Camada_2" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<defs>
+							<style>
+								.cls-1 {
+									fill: #fff;
+								}
+							</style>
+						</defs>
+						<g id="Camada_1-2" data-name="Camada 1">
+							<g>
+								<path class="cls-1" d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+								<path class="cls-1" d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+							</g>
+						</g>
+					</svg>
+					<span>Aumente a Imunidade</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" id="Camada_2" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<defs>
+							<style>
+								.cls-1 {
+									fill: #fff;
+								}
+							</style>
+						</defs>
+						<g id="Camada_1-2" data-name="Camada 1">
+							<g>
+								<path class="cls-1" d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+								<path class="cls-1" d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+							</g>
+						</g>
+					</svg>
+					<span>Controle o Fluxo Urinário</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" id="Camada_2" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<defs>
+							<style>
+								.cls-1 {
+									fill: #fff;
+								}
+							</style>
+						</defs>
+						<g id="Camada_1-2" data-name="Camada 1">
+							<g>
+								<path class="cls-1" d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+								<path class="cls-1" d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+							</g>
+						</g>
+					</svg>
+					<span>Acabe Com os Formigamentos</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" id="Camada_2" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<defs>
+							<style>
+								.cls-1 {
+									fill: #fff;
+								}
+							</style>
+						</defs>
+						<g id="Camada_1-2" data-name="Camada 1">
+							<g>
+								<path class="cls-1" d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+								<path class="cls-1" d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+							</g>
+						</g>
+					</svg>
+					<span>Sem embaçamento na visão</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" id="Camada_2" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<defs>
+							<style>
+								.cls-1 {
+									fill: #fff;
+								}
+							</style>
+						</defs>
+						<g id="Camada_1-2" data-name="Camada 1">
+							<g>
+								<path class="cls-1" d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+								<path class="cls-1" d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+							</g>
+						</g>
+					</svg>
+					<span>Cicatrização Normalizada</span>
+				</li>
+								<li  >
+					<svg xmlns="http://www.w3.org/2000/svg" id="Camada_2" data-name="Camada 2" viewBox="0 0 319.68 297.16">
+						<defs>
+							<style>
+								.cls-1 {
+									fill: #fff;
+								}
+							</style>
+						</defs>
+						<g id="Camada_1-2" data-name="Camada 1">
+							<g>
+								<path class="cls-1" d="m177.3,291.28c-6.13-12.02-12.18-23.88-18.23-35.75-25.41-49.84-50.81-99.67-76.22-149.51-.57-1.11-1.07-2.27-1.8-3.27-2.01-2.76-5.43-3.5-8.3-1.9-2.69,1.5-3.9,4.66-2.82,7.71.5,1.4,1.21,2.73,1.89,4.06,30.44,59.72,60.88,119.43,91.32,179.14.77,1.51,1.52,3.03,1.75,5.4-7.47-2.21-15.07-4.07-22.39-6.69-42.79-15.28-78.05-40.76-104.15-78.2C9.74,171.21-2.96,125.56.58,75.59,2.28,51.55,7.8,28.33,17.66,6.25,20.38.18,22.38-.84,28.75.55c33.51,7.29,63.59,21.82,89.93,43.67,40.51,33.59,65.09,76.69,73.78,128.47,6.68,39.77,1.69,78.49-13.59,115.85-.28.69-.62,1.36-.96,2.02-.1.19-.29.34-.61.72Z"></path>
+								<path class="cls-1" d="m190.93,295.03c3.75-12.43,7.46-24.82,11.25-37.18.39-1.27,1.25-2.43,2.01-3.56,8.92-13.23,17.9-26.42,26.76-39.69,1.06-1.59,2.45-3.89,2-5.35-.68-2.2-2.46-4.64-4.45-5.72-2.62-1.42-5.37-.02-7.11,2.5-3.76,5.43-7.44,10.92-11.16,16.38-.76,1.12-1.55,2.21-2.97,3.21.14-1.97.32-3.94.43-5.92,1.38-25.87-1.11-51.31-8.76-76.12-.84-2.72-.46-4.49,1.51-6.57,24.67-26.06,54.86-41.81,89.98-48.36,4.76-.89,9.63-1.33,14.47-1.7,4.91-.37,6.81,1,8.26,5.72,4.89,15.87,6.93,32.15,6.48,48.71-2.06,76.02-53.56,137.8-127.96,153.62-.35.07-.73,0-.73,0Z"></path>
+							</g>
+						</g>
+					</svg>
+					<span>Sem enjoos</span>
+				</li>
+							</ul>
+		</div>
+	</div>
+</div><div class="depoimentos">
+	<div class="uk-container">
+		<h2  >RESULTADOS REAIS QUE MUDAM A VIDA DE CLIENTES REAIS</h2>
+		<div class="uk-position-relative uk-visible" tabindex="-1" uk-slider>
+			<ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@m uk-grid">
+								<li>
+					<div class="uk-panel">
+						<img src="https://gotaq10.com.br/files/a/2305181224571.webp" alt="Isabel M. – Porto Alegre, RS" width="150" height="150"  uk-img="loading: lazy">
+						<h3  >"Eu me sinto muito melhor!"</h3>
+						<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#4A9800" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>Comprador Verificado</span>
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Camada_1" x="0px" y="0px" viewBox="0 0 1010.6 184.7" style="enable-background:new 0 0 1010.6 184.7;" xml:space="preserve"><style type="text/css">	.st0{fill:#FFCC00;}	.st1{fill:#FFE680;}	.st2{fill:#FFDD55;}	.st3{fill:#FFD42A;}</style><g>	<path class="st0" d="M565.2,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.6-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3  L565.2,184.7z"></path>	<path class="st1" d="M535.4,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L535.4,60.4z"></path>	<path class="st2" d="M505.2,101.3v51.9l-60.6,31.1L505.2,101.3z M505.2,101.3l59.6,81.5l-11.2-66L505.2,101.3z"></path>	<path class="st1" d="M408.5,70.4l96.7,30.9l-29.9-40.8L408.5,70.4z"></path>	<path class="st2" d="M505.2,101.3V0.1L535,60.5L505.2,101.3z"></path>	<path class="st3" d="M445.2,183.6l11.2-66.6l48.8-15.7L445.2,183.6z"></path></g><g>	<path class="st0" d="M769.4,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.5-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8L758,117.9  L769.4,184.7z"></path>	<path class="st1" d="M739.6,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L739.6,60.4z"></path>	<path class="st2" d="M709.4,101.3v51.9l-60.6,31.1L709.4,101.3z M709.4,101.3l59.6,81.5l-11.2-66L709.4,101.3z"></path>	<path class="st1" d="M612.7,70.4l96.7,30.9l-29.9-40.8L612.7,70.4z"></path>	<path class="st2" d="M709.4,101.3V0.1l29.8,60.4L709.4,101.3z"></path>	<path class="st3" d="M649.4,183.6l11.3-66.5l48.8-15.7L649.4,183.6z"></path></g><g>	<path class="st0" d="M973.7,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.5-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3  L973.7,184.7z"></path>	<path class="st1" d="M943.9,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L943.9,60.4z"></path>	<path class="st2" d="M913.7,101.3v51.9l-60.6,31.1L913.7,101.3z M913.7,101.3l59.6,81.5l-11.2-66L913.7,101.3z"></path>	<path class="st1" d="M816.9,70.4l96.7,30.9l-29.9-40.8L816.9,70.4z"></path>	<path class="st2" d="M913.7,101.3V0.1l29.8,60.4L913.7,101.3z"></path>	<path class="st3" d="M853.6,183.6l11.3-66.5l48.8-15.7L853.6,183.6z"></path></g><g>	<path class="st0" d="M361,184.7l-60-31.6l-60,31.5l11.5-66.8L204,70.5l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3L361,184.7z"></path>	<path class="st1" d="M331.2,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L331.2,60.4z"></path>	<path class="st2" d="M301,101.3v51.9l-60.6,31.1L301,101.3z M301,101.3l59.6,81.5l-11.2-66L301,101.3z"></path>	<path class="st1" d="M204.3,70.4l96.7,30.9l-29.9-40.8L204.3,70.4z"></path>	<path class="st2" d="M301,101.3V0.1l29.8,60.4L301,101.3z"></path>	<path class="st3" d="M241,183.6l11.3-66.5l48.8-15.7L241,183.6z"></path></g><g>	<path class="st0" d="M156.8,184.7l-60-31.6l-60,31.5l11.5-66.8L-0.2,70.5l67.1-9.7L96.9,0l30,60.8l67.1,9.8l-48.6,47.3L156.8,184.7  z"></path>	<path class="st1" d="M127,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L127,60.4z"></path>	<path class="st2" d="M96.8,101.3v51.9l-60.6,31.1L96.8,101.3z M96.8,101.3l59.6,81.5l-11.2-66L96.8,101.3z"></path>	<path class="st1" d="M0,70.4l96.7,30.9L66.8,60.5L0,70.4z"></path>	<path class="st2" d="M96.8,101.3V0.1l29.8,60.4L96.8,101.3z"></path>	<path class="st3" d="M36.7,183.6L48,117.1l48.8-15.7L36.7,183.6z"></path></g></svg>
+						</span>
+						<h4  >“Há mais ou menos dois meses comecei a usar esse maravilhoso produto chamado Gota Q10. Sofro de diabetes há anos, e os sintomas atrapalhavam muito o meu dia a dia. Mas, graças a esse suplemento, minha vida mudou completamente! Desde que comecei a tomar, notei que meus sintomas diminuíram consideravelmente. A cada dia que passa, sinto-me mais disposta e saudável. Os picos de glicose não são mais uma preocupação constante, e tenho mais energia e disposição para fazer minhas atividades diárias.</h4>
+						<p  >Isabel M. – Porto Alegre, RS</p>
+					</div>
+				</li>
+								<li>
+					<div class="uk-panel">
+						<img src="https://gotaq10.com.br/files/a/2305181224573.webp" alt="Marcos A. – Rio Branco, AC" width="150" height="150"  uk-img="loading: lazy">
+						<h3  >"Realmente funciona"</h3>
+						<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#4A9800" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>Comprador Verificado</span>
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Camada_1" x="0px" y="0px" viewBox="0 0 1010.6 184.7" style="enable-background:new 0 0 1010.6 184.7;" xml:space="preserve"><style type="text/css">	.st0{fill:#FFCC00;}	.st1{fill:#FFE680;}	.st2{fill:#FFDD55;}	.st3{fill:#FFD42A;}</style><g>	<path class="st0" d="M565.2,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.6-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3  L565.2,184.7z"></path>	<path class="st1" d="M535.4,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L535.4,60.4z"></path>	<path class="st2" d="M505.2,101.3v51.9l-60.6,31.1L505.2,101.3z M505.2,101.3l59.6,81.5l-11.2-66L505.2,101.3z"></path>	<path class="st1" d="M408.5,70.4l96.7,30.9l-29.9-40.8L408.5,70.4z"></path>	<path class="st2" d="M505.2,101.3V0.1L535,60.5L505.2,101.3z"></path>	<path class="st3" d="M445.2,183.6l11.2-66.6l48.8-15.7L445.2,183.6z"></path></g><g>	<path class="st0" d="M769.4,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.5-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8L758,117.9  L769.4,184.7z"></path>	<path class="st1" d="M739.6,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L739.6,60.4z"></path>	<path class="st2" d="M709.4,101.3v51.9l-60.6,31.1L709.4,101.3z M709.4,101.3l59.6,81.5l-11.2-66L709.4,101.3z"></path>	<path class="st1" d="M612.7,70.4l96.7,30.9l-29.9-40.8L612.7,70.4z"></path>	<path class="st2" d="M709.4,101.3V0.1l29.8,60.4L709.4,101.3z"></path>	<path class="st3" d="M649.4,183.6l11.3-66.5l48.8-15.7L649.4,183.6z"></path></g><g>	<path class="st0" d="M973.7,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.5-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3  L973.7,184.7z"></path>	<path class="st1" d="M943.9,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L943.9,60.4z"></path>	<path class="st2" d="M913.7,101.3v51.9l-60.6,31.1L913.7,101.3z M913.7,101.3l59.6,81.5l-11.2-66L913.7,101.3z"></path>	<path class="st1" d="M816.9,70.4l96.7,30.9l-29.9-40.8L816.9,70.4z"></path>	<path class="st2" d="M913.7,101.3V0.1l29.8,60.4L913.7,101.3z"></path>	<path class="st3" d="M853.6,183.6l11.3-66.5l48.8-15.7L853.6,183.6z"></path></g><g>	<path class="st0" d="M361,184.7l-60-31.6l-60,31.5l11.5-66.8L204,70.5l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3L361,184.7z"></path>	<path class="st1" d="M331.2,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L331.2,60.4z"></path>	<path class="st2" d="M301,101.3v51.9l-60.6,31.1L301,101.3z M301,101.3l59.6,81.5l-11.2-66L301,101.3z"></path>	<path class="st1" d="M204.3,70.4l96.7,30.9l-29.9-40.8L204.3,70.4z"></path>	<path class="st2" d="M301,101.3V0.1l29.8,60.4L301,101.3z"></path>	<path class="st3" d="M241,183.6l11.3-66.5l48.8-15.7L241,183.6z"></path></g><g>	<path class="st0" d="M156.8,184.7l-60-31.6l-60,31.5l11.5-66.8L-0.2,70.5l67.1-9.7L96.9,0l30,60.8l67.1,9.8l-48.6,47.3L156.8,184.7  z"></path>	<path class="st1" d="M127,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L127,60.4z"></path>	<path class="st2" d="M96.8,101.3v51.9l-60.6,31.1L96.8,101.3z M96.8,101.3l59.6,81.5l-11.2-66L96.8,101.3z"></path>	<path class="st1" d="M0,70.4l96.7,30.9L66.8,60.5L0,70.4z"></path>	<path class="st2" d="M96.8,101.3V0.1l29.8,60.4L96.8,101.3z"></path>	<path class="st3" d="M36.7,183.6L48,117.1l48.8-15.7L36.7,183.6z"></path></g></svg>
+						</span>
+						<h4  >Posso afirmar com convicção que o Gota Q10 foi um divisor de águas na minha vida. Agora, eu me sinto muito mais confiante para lidar com a diabetes e aproveitar meu dia a dia sem medo dos efeitos colaterais dessa condição. Recomendo fortemente Gota Q10 para todas as pessoas que, assim como eu, buscam uma forma eficaz e prática para vencer os desafios que a diabetes nos impõe. Acreditem, este produto fez maravilhas por mim!”</h4>
+						<p  >Marcos A. – Rio Branco, AC</p>
+					</div>
+				</li>
+								<li>
+					<div class="uk-panel">
+						<img src="https://gotaq10.com.br/files/a/2305181224570.webp" alt="Silvia S. – Linhares, ES" width="150" height="150"  uk-img="loading: lazy">
+						<h3  >"Ótimo suplemento para açúcar no sangue"</h3>
+						<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#4A9800" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>Comprador Verificado</span>
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Camada_1" x="0px" y="0px" viewBox="0 0 1010.6 184.7" style="enable-background:new 0 0 1010.6 184.7;" xml:space="preserve"><style type="text/css">	.st0{fill:#FFCC00;}	.st1{fill:#FFE680;}	.st2{fill:#FFDD55;}	.st3{fill:#FFD42A;}</style><g>	<path class="st0" d="M565.2,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.6-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3  L565.2,184.7z"></path>	<path class="st1" d="M535.4,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L535.4,60.4z"></path>	<path class="st2" d="M505.2,101.3v51.9l-60.6,31.1L505.2,101.3z M505.2,101.3l59.6,81.5l-11.2-66L505.2,101.3z"></path>	<path class="st1" d="M408.5,70.4l96.7,30.9l-29.9-40.8L408.5,70.4z"></path>	<path class="st2" d="M505.2,101.3V0.1L535,60.5L505.2,101.3z"></path>	<path class="st3" d="M445.2,183.6l11.2-66.6l48.8-15.7L445.2,183.6z"></path></g><g>	<path class="st0" d="M769.4,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.5-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8L758,117.9  L769.4,184.7z"></path>	<path class="st1" d="M739.6,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L739.6,60.4z"></path>	<path class="st2" d="M709.4,101.3v51.9l-60.6,31.1L709.4,101.3z M709.4,101.3l59.6,81.5l-11.2-66L709.4,101.3z"></path>	<path class="st1" d="M612.7,70.4l96.7,30.9l-29.9-40.8L612.7,70.4z"></path>	<path class="st2" d="M709.4,101.3V0.1l29.8,60.4L709.4,101.3z"></path>	<path class="st3" d="M649.4,183.6l11.3-66.5l48.8-15.7L649.4,183.6z"></path></g><g>	<path class="st0" d="M973.7,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.5-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3  L973.7,184.7z"></path>	<path class="st1" d="M943.9,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L943.9,60.4z"></path>	<path class="st2" d="M913.7,101.3v51.9l-60.6,31.1L913.7,101.3z M913.7,101.3l59.6,81.5l-11.2-66L913.7,101.3z"></path>	<path class="st1" d="M816.9,70.4l96.7,30.9l-29.9-40.8L816.9,70.4z"></path>	<path class="st2" d="M913.7,101.3V0.1l29.8,60.4L913.7,101.3z"></path>	<path class="st3" d="M853.6,183.6l11.3-66.5l48.8-15.7L853.6,183.6z"></path></g><g>	<path class="st0" d="M361,184.7l-60-31.6l-60,31.5l11.5-66.8L204,70.5l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3L361,184.7z"></path>	<path class="st1" d="M331.2,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L331.2,60.4z"></path>	<path class="st2" d="M301,101.3v51.9l-60.6,31.1L301,101.3z M301,101.3l59.6,81.5l-11.2-66L301,101.3z"></path>	<path class="st1" d="M204.3,70.4l96.7,30.9l-29.9-40.8L204.3,70.4z"></path>	<path class="st2" d="M301,101.3V0.1l29.8,60.4L301,101.3z"></path>	<path class="st3" d="M241,183.6l11.3-66.5l48.8-15.7L241,183.6z"></path></g><g>	<path class="st0" d="M156.8,184.7l-60-31.6l-60,31.5l11.5-66.8L-0.2,70.5l67.1-9.7L96.9,0l30,60.8l67.1,9.8l-48.6,47.3L156.8,184.7  z"></path>	<path class="st1" d="M127,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L127,60.4z"></path>	<path class="st2" d="M96.8,101.3v51.9l-60.6,31.1L96.8,101.3z M96.8,101.3l59.6,81.5l-11.2-66L96.8,101.3z"></path>	<path class="st1" d="M0,70.4l96.7,30.9L66.8,60.5L0,70.4z"></path>	<path class="st2" d="M96.8,101.3V0.1l29.8,60.4L96.8,101.3z"></path>	<path class="st3" d="M36.7,183.6L48,117.1l48.8-15.7L36.7,183.6z"></path></g></svg>
+						</span>
+						<h4  >“Eu simplesmente não posso expressar o quanto estou satisfeita com o Gota Q10! Há alguns anos, utilizava outro produto de controle de açúcar no sangue, que era muito mais caro. Um dia, decidi dar uma chance ao Gota Q10, e minha surpresa foi enorme ao perceber que ele é tão eficiente quanto o produto mais caro, mas com uma vantagem: o preço é bem menor! E agora, com o Gota Q10, não só posso manter o açúcar no sangue sob controle, como também posso economizar meu dinheiro sem sacrificar a qualidade do tratamento.”</h4>
+						<p  >Silvia S. – Linhares, ES</p>
+					</div>
+				</li>
+								<li>
+					<div class="uk-panel">
+						<img src="https://gotaq10.com.br/files/a/2305181224572.webp" alt="José A. – Rio de Janeiro, RJ" width="150" height="150"  uk-img="loading: lazy">
+						<h3  >"Suplemento de qualidade - já funcionando!"</h3>
+						<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#4A9800" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>Comprador Verificado</span>
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Camada_1" x="0px" y="0px" viewBox="0 0 1010.6 184.7" style="enable-background:new 0 0 1010.6 184.7;" xml:space="preserve"><style type="text/css">	.st0{fill:#FFCC00;}	.st1{fill:#FFE680;}	.st2{fill:#FFDD55;}	.st3{fill:#FFD42A;}</style><g>	<path class="st0" d="M565.2,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.6-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3  L565.2,184.7z"></path>	<path class="st1" d="M535.4,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L535.4,60.4z"></path>	<path class="st2" d="M505.2,101.3v51.9l-60.6,31.1L505.2,101.3z M505.2,101.3l59.6,81.5l-11.2-66L505.2,101.3z"></path>	<path class="st1" d="M408.5,70.4l96.7,30.9l-29.9-40.8L408.5,70.4z"></path>	<path class="st2" d="M505.2,101.3V0.1L535,60.5L505.2,101.3z"></path>	<path class="st3" d="M445.2,183.6l11.2-66.6l48.8-15.7L445.2,183.6z"></path></g><g>	<path class="st0" d="M769.4,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.5-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8L758,117.9  L769.4,184.7z"></path>	<path class="st1" d="M739.6,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L739.6,60.4z"></path>	<path class="st2" d="M709.4,101.3v51.9l-60.6,31.1L709.4,101.3z M709.4,101.3l59.6,81.5l-11.2-66L709.4,101.3z"></path>	<path class="st1" d="M612.7,70.4l96.7,30.9l-29.9-40.8L612.7,70.4z"></path>	<path class="st2" d="M709.4,101.3V0.1l29.8,60.4L709.4,101.3z"></path>	<path class="st3" d="M649.4,183.6l11.3-66.5l48.8-15.7L649.4,183.6z"></path></g><g>	<path class="st0" d="M973.7,184.7l-60-31.6l-60,31.5l11.5-66.8l-48.5-47.3l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3  L973.7,184.7z"></path>	<path class="st1" d="M943.9,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L943.9,60.4z"></path>	<path class="st2" d="M913.7,101.3v51.9l-60.6,31.1L913.7,101.3z M913.7,101.3l59.6,81.5l-11.2-66L913.7,101.3z"></path>	<path class="st1" d="M816.9,70.4l96.7,30.9l-29.9-40.8L816.9,70.4z"></path>	<path class="st2" d="M913.7,101.3V0.1l29.8,60.4L913.7,101.3z"></path>	<path class="st3" d="M853.6,183.6l11.3-66.5l48.8-15.7L853.6,183.6z"></path></g><g>	<path class="st0" d="M361,184.7l-60-31.6l-60,31.5l11.5-66.8L204,70.5l67.1-9.7l30-60.8l30,60.8l67.1,9.8l-48.6,47.3L361,184.7z"></path>	<path class="st1" d="M331.2,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L331.2,60.4z"></path>	<path class="st2" d="M301,101.3v51.9l-60.6,31.1L301,101.3z M301,101.3l59.6,81.5l-11.2-66L301,101.3z"></path>	<path class="st1" d="M204.3,70.4l96.7,30.9l-29.9-40.8L204.3,70.4z"></path>	<path class="st2" d="M301,101.3V0.1l29.8,60.4L301,101.3z"></path>	<path class="st3" d="M241,183.6l11.3-66.5l48.8-15.7L241,183.6z"></path></g><g>	<path class="st0" d="M156.8,184.7l-60-31.6l-60,31.5l11.5-66.8L-0.2,70.5l67.1-9.7L96.9,0l30,60.8l67.1,9.8l-48.6,47.3L156.8,184.7  z"></path>	<path class="st1" d="M127,60.4c-30.4,41.4-30.7,41.8-30.7,41.8l97.4-31.9L127,60.4z"></path>	<path class="st2" d="M96.8,101.3v51.9l-60.6,31.1L96.8,101.3z M96.8,101.3l59.6,81.5l-11.2-66L96.8,101.3z"></path>	<path class="st1" d="M0,70.4l96.7,30.9L66.8,60.5L0,70.4z"></path>	<path class="st2" d="M96.8,101.3V0.1l29.8,60.4L96.8,101.3z"></path>	<path class="st3" d="M36.7,183.6L48,117.1l48.8-15.7L36.7,183.6z"></path></g></svg>
+						</span>
+						<h4  >Esse produto tem sido uma verdadeira bênção para minha saúde e qualidade de vida! Não tenho dúvidas de que o Gota Q10 pode fazer a diferença na vida de muitas pessoas que sofrem com a diabetes, assim como fez na minha.  Cumpre o que promete! Eu recomendo a todos que desejam ver melhorias significativas no controle da doença e na recuperação da sua energia e disposição.”</h4>
+						<p  >José A. – Rio de Janeiro, RJ</p>
+					</div>
+				</li>
+							</ul>
+			<div class="uk-light">
+				<a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+				<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+			</div>
+		</div>
+	</div>
+</div><div class="oferta dois">
+	<div class="titulo">
+		<h2 class="uk-container"  >ESCOLHA A MELHOR OFERTA PARA VOCÊ</h2>
+	</div>
+	<div class="uk-container">
+		<h3  >FRASCO EXTRA + FRETE GRÁTIS SOMENTE HOJE!</h3>
+		<ul class="cards">
+				<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/cam6751vj">
+    <img src="https://gotaq10.com.br/files/a/2305221857010.webp" alt="10 FRASCOS" width="319" height="763" uk-img="loading: lazy">
+  </a>
+</li>
+						<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/camrez6pv">
+    <img src="https://gotaq10.com.br/files/a/2305221857011.webp" alt="5 FRASCOS" width="243" height="531" uk-img="loading: lazy">
+  </a>
+</li>
+
+						<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/cam7pyzn1">
+    <img src="https://gotaq10.com.br/files/a/2305221857012.webp" alt="3 FRASCOS" width="243" height="531" uk-img="loading: lazy">
+  </a>
+</li>
+
+						<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/cam85ldr8">
+    <img src="https://gotaq10.com.br/files/a/2305221857013.webp" alt="1 FRASCO" width="243" height="528" uk-img="loading: lazy">
+  </a>
+</li>
+				</ul>
+	</div>
+</div><div class="garantia">
+	<div class="shape shape-top">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path  d="M1000,4.3V0H0v4.3C0.9,23.1,126.7,99.2,500,100S1000,22.7,1000,4.3z"></path></svg></div>
+	<div class="uk-container">
+		<figure><img src="https://gotaq10.com.br/files/a/2305181258430.webp" alt="100% SATISFEITO OU TRATAMENTO GRATUITO" width="300" height="300"  uk-img="loading: lazy"></figure>
+		<div class="text">
+			<h2  >100% SATISFEITO<br />
+OU TRATAMENTO<br />
+GRATUITO</h2>
+			<div  ><p>Acreditamos tanto no poder da f&oacute;rmula do <strong>GotaQ10</strong> que <strong>garantimos sua satisfa&ccedil;&atilde;o!</strong> Se em <strong>90 dias</strong> voc&ecirc; n&atilde;o notar os benef&iacute;cios ou n&atilde;o gostar do produto basta pedir seu dinheiro de volta. <strong>Sem perguntas, sem enrola&ccedil;&atilde;o e sem letras mi&uacute;das.</strong></p></div>
+			<div class="link">
+				<a class="cta pular" href="./#oferta" >
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+					<span>QUERO MEU GOTA Q10!</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="duvidas">
+	<div class="uk-container">
+		<h2  >DÚVIDAS FREQUENTES</h2>
+		<ul uk-accordion>
+						<li>
+				<a class="uk-accordion-title" href="#"  >O SITE É SEGURO?</a>
+				<div class="uk-accordion-content">
+					<div class="text"  >
+						Este site é 100% protegido contra recursos de má intenção. Suas informações pessoais são sigilosas segundo a nossa Política de Privacidade e a entrega é garantida! O Gota Q10 é vendido diariamente para pessoas de todo o Brasil.					</div>
+				</div>
+			</li>
+						<li>
+				<a class="uk-accordion-title" href="#"  >QUAL O PRAZO DE ENTREGA?</a>
+				<div class="uk-accordion-content">
+					<div class="text"  >
+						O prazo médio de entrega para o Brasil é de 5 a 10 dias úteis. O produto só é enviado após a confirmação do seu pagamento pela administradora do seu cartão de crédito ou após a confirmação do seu pagamento do boleto. Lembrando que estamos com promoção de FRETE GRÁTIS por tempo limitado e a compra no cartão acelera o processamento do seu pedido.					</div>
+				</div>
+			</li>
+						<li>
+				<a class="uk-accordion-title" href="#"  >POR QUANTO TEMPO DEVO UTILIZAR?</a>
+				<div class="uk-accordion-content">
+					<div class="text"  >
+						Recomendamos o uso por no mínimo 3 meses para obter os melhores resultados, e todos os efeitos do composto. Pode também, ser utilizado sempre, até mesmo para a prevenção.					</div>
+				</div>
+			</li>
+						<li>
+				<a class="uk-accordion-title" href="#"  >POR QUANTO TEMPO DEVO UTILIZAR?</a>
+				<div class="uk-accordion-content">
+					<div class="text"  >
+						Sim, o GotaQ10 é certificado e autorizado para comercialização em todo território Nacional através do anexo 1 da RDC 27/2010 em conformidade com a RDC 23/2000 da ANVISA.					</div>
+				</div>
+			</li>
+						<li>
+				<a class="uk-accordion-title" href="#"  >QUAIS AS FORMAS DE PAGAMENTO?</a>
+				<div class="uk-accordion-content">
+					<div class="text"  >
+						Basta escolher o kit que mais combina com você. Gota Q10 pode ser pago a vista, através de boleto bancário, ou através de cartão de crédito parcelado em até 12x. Lembrando que a compra pelo cartão de crédito adianta o processamento do seu pedido.					</div>
+				</div>
+			</li>
+					</ul>
+	</div>
+</section><div class="whatsapp">
+	<div class="uk-container">
+		<div class="content">
+			<img src="https://gotaq10.com.br/files/a/2305181410390.webp" alt="Whatsapp" width="150" height="150"  uk-img="loading: lazy">
+			<h2  >QUER FALAR COM UMA DE NOSSAS ATENDENTES?</h2>
+			<p class="wz"  >Se você possui dúvidas e quer falar direto com uma de nossas consultoras, disponibilizamos um Whatsapp Exclusivo. Para acessar clique no botão abaixo.</p>
+			<a class="uk-button cta" href="""" >
+				<i class="bi bi-whatsapp"></i>
+				ATENDIMENTO VIA WHATSAPP			</a>		
+		</div>
+	</div>
+</div></main>
+<footer class="footer" id="footer">
+	<div class="contato">
+		<ul class="uk-container">
+			<li class="left">
+				<img src="https://gotaq10.com.br/files/d/2305250230400.svg" alt="Logo Gota Q10" width="200" height="200"  uk-img="loading: lazy">
+			</li>
+			<li class="center">
+				<h4>LINKS ÚTEIS</h4>
+				<div class="links">
+					<a href=""""  target="_blank">AVISO LEGAL </a>
+					<a href=""""  target="_blank">TIRE SUAS DÚVIDAS </a>
+					<a href=""""  target="_blank">TERMOS DE USO</a>
+					<p   target="_blank">RASTREAR PEDIDO</p>
+				</div>
+			</li>
+			<li class="center">
+				<h4>FORMAS DE PAGAMENTO</h4>
+				<img src="https://gotaq10.com.br/files/a/2305250235200.webp" alt="Formas de Pagamento" width="308" height="94"  uk-img="loading: lazy">
+			</li>
+			<li class="right">
+				<h4>COMPRA 100% SEGURA</h4>
+				<img src="https://gotaq10.com.br/files/a/2305261645020.webp" alt="Site Seguro" width="250" height="79"  uk-img="loading: lazy">
+			</li>
+		</ul>
+	</div>
+</footer></section>
+<script async src="https://gotaq10.com.br/site/libs/main.js?v230525165322"></script>
+</body>
+</html>
