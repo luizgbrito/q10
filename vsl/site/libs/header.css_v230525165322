@@ -1,0 +1,270 @@
+.link {
+	display: flex;
+	flex-direction: column;
+}
+.link .center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.link img.selos {
+	max-width: 250px;
+	margin-top: 5px !important;
+	display: block;
+}
+.link p {
+	color: #FFF;
+	font-size: .8rem;
+	text-align: center;
+	margin-top: 3px;
+	letter-spacing: 3px;
+}
+.cta {
+	color: #FFF;
+	padding: 12px 25px;
+	border-radius: 50px;
+	font-weight: 400;
+	display: inline-flex;
+	grid-gap: 5px;
+	align-items: center;
+	fill: #FFF;
+	transition: all .3s;
+	font-size: 1rem;
+	line-height: 1;
+}
+.cta img {
+	margin-top: -5px;
+	margin-right: 5px;
+	width: 25px;
+}
+.cta svg{
+	height: 25px;
+}
+.cta i {
+	margin-right: 5px;
+}
+.cta:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+.coder div {
+	width: 100%;
+}
+
+.topo {
+	background-color: transparent;
+	background-image: linear-gradient(249deg, #A0CC0D 0%, #0D5C8C 100%);
+	position: relative;
+	z-index: 100;
+}
+.topo .shape-bottom {
+	bottom: -1px;
+}
+.topo .shape {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	line-height: 0;
+	direction: ltr;
+}
+.topo .shape svg{
+	width: 200%;
+	height: 36px;
+	fill: #FFF;
+}
+.topo .uk-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 65px 125px;
+}
+.topo .logo img{
+	max-width: 187px;
+}
+.topo .rastreio {
+	border: solid 1px #FFF;
+	color: #FFF;
+	padding: 5px 15px;
+	border-radius: 25px;
+	font-size: .75rem;
+	text-decoration: none;
+}
+
+.header{
+	position: relative;
+	overflow-y: hidden;
+	background: url(img/textura.svg);
+}
+.header .uk-container{
+	display: grid;
+	grid-template-areas:
+    "h1  figure"
+    "div  figure";
+	grid-template-rows: auto;
+  grid-template-columns: 1fr 45%;
+	position: relative;
+	padding: 80px 120px 50px;
+	grid-gap: 20px;
+}
+.header .folhas{
+	position: absolute;
+	opacity: 1;
+	display: flex;
+	width: 100%;
+	height: 0;
+	top: 50%;
+	align-items: center;
+	justify-content: space-between;
+}
+.header .folhas img:first-child{
+	width: 135px;
+}
+.header .folhas img:last-child{
+	width: 205px;
+	margin-top: 300px;
+}
+.header .uk-container h1{
+	grid-area: h1;
+	font-size: 2rem;
+	background: rgb(25,135,171);
+	background: linear-gradient(32deg, rgba(25,135,171,1) 0%, rgba(111,149,21,1) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	font-weight: 700;
+	color: #6EC1E400;
+  font-family: "Poppins", Sans-serif;
+	line-height: 2.2rem;
+	margin-bottom: 20px;
+}
+.header .uk-container div.dados{
+	grid-area: div;
+	background-color: transparent;
+  background-image: linear-gradient(125deg, #1D6A99 0%, #A0CC0D 100%);
+	position: relative;
+	padding: 40px 40px 40px 80px;
+	border-radius: 40px 40px 154px 40px;  
+	display: grid;
+	grid-gap: 20px;
+}
+.header .uk-container div.dados h2{
+	font-size: 1.4rem;
+	font-family: "Poppins", Sans-serif;
+	font-weight: 700;
+	color: #FFF;
+}
+.header .uk-container div.dados ul{
+	display: grid;
+	grid-gap: 5px;
+}
+.header .uk-container div.dados li{
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	grid-gap: 5px;
+}
+.header .uk-container div.dados li svg{
+	height: 13px;
+	fill: #FFF;
+}
+.header .uk-container figure{
+	grid-area: figure;
+	display: flex;
+	align-items: center;
+}
+.header .uk-container figure img{
+	transform: scale(1.4);
+}
+.header .link {
+	align-items: center;
+	display: flex;
+	margin-bottom: 50px;
+}
+.header .link a{
+	background-color: transparent;
+	background-image: linear-gradient(278deg, #0D5C8C 0%, #A0CC0D 100%);
+	border-radius: 9px 9px 9px 9px;
+}
+.header .link a svg{
+	width: 1rem;
+}
+
+
+@media screen and (max-width:720px) {
+	.topo {
+		background: url(img/header-mobile-gota-Q10.svg) no-repeat center bottom/ 100%;
+	}
+	.topo .logo img {
+    max-width: 162.45px;
+	}
+	.topo .rastreio{
+		padding: 7px 15px;
+		font-size: 9px;
+		text-transform: uppercase;
+		font-family: "Poppins", Sans-serif;
+		font-weight: 700;
+		line-height: 1;
+	}
+	.topo .uk-container {
+		padding: 25px 40px 65px;
+	}
+	.topo .shape {
+		display: none;
+	}
+	.header .folhas{
+		top: 10%;
+	}
+	.header .folhas img:first-child{
+		width: 65px;
+		margin-top: 380px;
+	}
+	.header .folhas img:last-child{
+		width: 95px;
+		margin-top: 960px;
+	}
+	.header .uk-container {
+    grid-template-areas:
+			"h1"
+			"figure"
+			"div"
+		;
+    grid-template-columns: 1fr;
+    padding: 10px 0px 30px;
+    grid-gap: 20px;
+	}
+	.header .uk-container h1{
+		font-size: 1.56rem;
+		text-align: center;
+		max-width: 300px;
+		margin: auto;
+		line-height: 1.3;
+	}
+	.header .uk-container figure{
+		margin-top: 1rem;
+	}
+	.header .uk-container figure img {
+    transform: scale(1.05);
+	}
+	.header .uk-container div.dados{
+		padding: 30px 40px;
+		border-radius: 0px 60px 30px 0px;
+		max-width: calc(100% - 20px);
+	}
+	.header .uk-container div.dados h2 {
+		font-size: 1rem;
+		max-width: 270px;
+	}
+	.header .uk-container div.dados li{
+		font-size: .875rem;
+		line-height: 1.4
+	}
+	.header .link{
+		margin-bottom: 30px;
+	}
+	.header .link a{
+		border-radius: 30px;
+	}
+	.header .link a span{
+		font-weight: 700;
+	}
+}

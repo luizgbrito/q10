@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+
+<script id="node">
+	"index.php" == window.location.href.split("/")[4] && window.history.pushState("object or string", "Title", "./");
+	const ss = sessionStorage;
+	const sURL = 'https://gotaq10.com.br'; 
+	const MOB = 'desktop';
+	const SA = 0;
+	
+	var urlBackRedirect = '';
+	if(urlBackRedirect!=''){
+		window.history.pushState(null, "", window.location.href);
+		window.onpopstate = function () {
+			window.history.pushState(null, "", window.location.href);
+			if(urlBackRedirect!=''){
+				location.href=urlBackRedirect;			
+			}else{
+				location.href=URL
+				//window.history.go(-1);
+			}
+		};
+	}
+	
+	const DT = "";
+	const ED = [0,{
+	"0":[
+		"TIPO",
+		"CSS",
+		"CONTEUDO"
+	]
+}];
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=5.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="icon" href="https://gotaq10.com.br/files/favicon.png">
+<title></title>
+<meta name="description" content="">
+<meta itemprop="url" content="https://gotaq10.com.br">
+<link rel="canonical" href="https://gotaq10.com.br">
+<meta itemprop="image" content="https://gotaq10.com.br/files/logo.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gotaq10.com.br">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://gotaq10.com.br/site/libs/img/capa.png">
+<meta property="og:site_name" content="">
+<meta property="og:locale" content="pt_BR">	
+<meta name="author" content="Randiclecio Moura">
+<meta name="robots" content="index, follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link lazyload href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+<link lazyload href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link lazyload href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.15/js/uikit.min.js" integrity="sha512-fAtkuxdFz6+UGhqi+TupOW5fEeyzQISRfefoWXsr+p/WeUUbjmAxZTQ2nY8BqvLwoh3+PMKWJeqtggitpdQ+Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.15/css/uikit.min.css" integrity="sha512-SpayEdTMPKR8AonZQ1ImafGz1bSwVToTfHiuSXfmlSgWlWIDnVVEepPO1C7eA4wtY6eb6Zu+sCcYbQKvtnXKUg==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'"/>
+<style>*:not(i),
+*:not(.wysiwyg) {
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	text-decoration: none;
+	outline: 0;
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Montserrat', sans-serif;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+}
+#flow,
+body,
+html {
+	height: 100%;
+}
+#flow,
+.uk-container {
+	width: 100%;
+}
+html {
+	position: relative;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	overflow: inherit;
+}
+#flow {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+#main {
+	flex-grow: 1;
+}
+.uk-container {
+	max-width: 1140px;
+	min-height: 30px;
+	margin: 0 auto !important;
+	transition: .1s;
+	position: relative;
+	z-index: 1;
+}
+.pulse {
+	-webkit-animation: pulse 1.5s linear infinite;
+	animation: pulse 1.5s linear infinite;
+	box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	25% {
+		opacity: .95;
+		box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+		transform: scale(.95);
+		border-radius: 15px;
+	}
+	75% {
+		border-radius: 30px;
+		transform: scale(1.05);
+		opacity: .95;
+		box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+	}
+}
+.pular {
+	-webkit-animation: pular 1.5s linear infinite;
+	animation: pular 1.5s linear infinite;
+}
+@keyframes pular {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	25% {
+		transform: scale(1.04);
+		opacity: .85;
+	}
+	75% {
+		transform: scale(.96);
+		opacity: .85;
+	}
+}
+.saltar:hover {
+	-webkit-animation: salt 1.5s linear infinite;
+	animation: salt 1.5s linear infinite;
+}
+@keyframes salt {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	25% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	75% {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+}
+.glows {
+	background: linear-gradient(269deg, #eb7721, #f8a636, #be5d13);
+	background-size: 600% 600%;
+	-webkit-animation: glows 4s ease infinite;
+	animation: glows 4s ease infinite;
+}
+@keyframes glows {
+	0% {
+		background-position: 0% 51%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 51%;
+	}
+}
+.giro::before {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 140%;
+	background: linear-gradient(#d6635c, #fbb714);
+	-webkit-animation: giros 4s linear infinite;
+	animation: giros 4s linear infinite;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+@keyframes giros {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.background-overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}</style>
+
+<link lazyload rel="stylesheet" href="https://gotaq10.com.br/site/libs/header.css?v230525165322" media="print" onload="this.media='all'"/>
+<link lazyload rel="stylesheet" href="https://gotaq10.com.br/site/libs/site.css?v230525165322" media="print" onload="this.media='all'"/>
+<link rel="stylesheet" href="https://gotaq10.com.br/site/libs/out.css?v230525165322"/>
+<link rel="stylesheet" href="https://gotaq10.com.br/site/libs/advs.css?v230525165322"/>
+</head>
+<body>
+<section id="flow">
+<main id="main">
+<div class="video">
+	<div class="uk-container">
+		<img src="files/a/banner-vsl-1.png" alt="Médicos Afirmam" width="200" height="200"  uk-img="loading: lazy">
+		<img src="files/a/banner-vsl-2.png" alt="Médicos Afirmam" width="200" height="200"  uk-img="loading: lazy">
+		<div class="code"  ><div id="vid_645842e22c5fbe0009230185" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_645842e22c5fbe0009230185" src="https://images.converteai.net/7ccc1362-2860-4371-917c-92ecfbec948a/players/645842e22c5fbe0009230185/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_645842e22c5fbe0009230185" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_645842e22c5fbe0009230185">var s=document.createElement("script");s.src="https://scripts.converteai.net/7ccc1362-2860-4371-917c-92ecfbec948a/players/645842e22c5fbe0009230185/player.js",s.async=!0,document.head.appendChild(s);</script></div>
+	</div>
+</div>
+<div id="oferta" style="display: none;">
+		<div class="oferta vsl">
+		<div class="uk-container">
+			<div class="titulo">
+		<h2 class="uk-container">ESCOLHA A MELHOR OFERTA PARA VOCÊ</h2>
+	</div>
+			<ul class="cards">
+						<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/camrez6pv">
+    <img src="https://gotaq10.com.br/files/a/2305221857011.webp" alt="5 FRASCOS" width="243" height="531" uk-img="loading: lazy">
+  </a>
+</li>
+						<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/cam7pyzn1">
+    <img src="https://gotaq10.com.br/files/a/2305221857012.webp" alt="3 FRASCOS" width="243" height="531" uk-img="loading: lazy">
+  </a>
+</li>
+						<li class="card">
+  <a target="_blank" href="https://ev.braip.com/campanhas/cpa/cam85ldr8">
+    <img src="https://gotaq10.com.br/files/a/2305221857013.webp" alt="1 FRASCO" width="243" height="528" uk-img="loading: lazy">
+  </a>
+</li>
+						</ul>
+		</div>
+	</div>
+
+		<div class="garantia vsl">
+		<div class="uk-container">
+			<h2  >100% SATISFEITO OU TRATAMENTO GRATUITO</h2>
+			<figure><img src="https://gotaq10.com.br/files/a/2305181258430.webp" alt="" width="300" height="300"  uk-img="loading: lazy"></figure>
+			<div class="text">
+				<div  ><p>Acreditamos tanto no poder da f&oacute;rmula do Gota Q10 que garantimos sua satisfa&ccedil;&atilde;o! Se em 90 dias voc&ecirc; n&atilde;o notar os benef&iacute;cios ou n&atilde;o gostar do produto basta pedir seu dinheiro de volta. Sem perguntas, sem enrola&ccedil;&atilde;o e sem letras mi&uacute;das.</p></div>
+			</div>
+		</div>
+	</div>
+
+		<div class="duvidas vsl">
+		<div class="uk-container">
+			<h2  >DÚVIDAS FREQUENTES</h2>
+			<ul uk-accordion>
+								<li>
+					<a class="uk-accordion-title" href="#"  >O SITE É SEGURO?</a>
+					<div class="uk-accordion-content">
+						<div class="text"  >
+							Este site é 100% protegido contra recursos de má intenção. Suas informações pessoais são sigilosas segundo a nossa Política de Privacidade e a entrega é garantida! O Gota Q10 é vendido diariamente para pessoas de todo o Brasil.						</div>
+					</div>
+				</li>
+								<li>
+					<a class="uk-accordion-title" href="#"  >QUAL O PRAZO DE ENTREGA?</a>
+					<div class="uk-accordion-content">
+						<div class="text"  >
+							O prazo médio de entrega para o Brasil é de 5 a 10 dias úteis. O produto só é enviado após a confirmação do seu pagamento pela administradora do seu cartão de crédito ou após a confirmação do seu pagamento do boleto. Lembrando que estamos com promoção de FRETE GRÁTIS por tempo limitado e a compra no cartão acelera o processamento do seu pedido.						</div>
+					</div>
+				</li>
+								<li>
+					<a class="uk-accordion-title" href="#"  >POR QUANTO TEMPO DEVO UTILIZAR?</a>
+					<div class="uk-accordion-content">
+						<div class="text"  >
+							Recomendamos o uso por no mínimo 3 meses para obter os melhores resultados, e todos os efeitos do composto. Pode também, ser utilizado sempre, até mesmo para a prevenção.						</div>
+					</div>
+				</li>
+								<li>
+					<a class="uk-accordion-title" href="#"  >É CERTIFICADO PELA ANVISA?</a>
+					<div class="uk-accordion-content">
+						<div class="text"  >
+							Sim, o GotaQ10 é certificado e autorizado para comercialização em todo território Nacional através do anexo 1 da RDC 27/2010 em conformidade com a RDC 23/2000 da ANVISA.						</div>
+					</div>
+				</li>
+								<li>
+					<a class="uk-accordion-title" href="#"  >QUAIS AS FORMAS DE PAGAMENTO?</a>
+					<div class="uk-accordion-content">
+						<div class="text"  >
+							Basta escolher o kit que mais combina com você. Gota Q10 pode ser pago a vista, através de boleto bancário, ou através de cartão de crédito parcelado em até 12x. Lembrando que a compra pelo cartão de crédito adianta o processamento do seu pedido.						</div>
+					</div>
+				</li>
+							</ul>
+		</div>
+	</div>
+</div>
+
+<footer class="footer" id="footer">
+	<div class="contato">
+		<ul class="uk-container">
+			<li class="left">
+				<img src="https://gotaq10.com.br/files/d/2305250230400.svg" alt="Logo Gota Q10" width="200" height="200"  uk-img="loading: lazy">
+			</li>
+			<li class="center">
+				<h4>LINKS ÚTEIS</h4>
+				<div class="links">
+					<a href=""""  target="_blank">AVISO LEGAL </a>
+					<a href=""""  target="_blank">TIRE SUAS DÚVIDAS </a>
+					<a href=""""  target="_blank">TERMOS DE USO</a>
+					<p   target="_blank">RASTREAR PEDIDO</p>
+				</div>
+			</li>
+			<li class="center">
+				<h4>FORMAS DE PAGAMENTO</h4>
+				<img src="https://gotaq10.com.br/files/a/2305250235200.webp" alt="Formas de Pagamento" width="308" height="94"  uk-img="loading: lazy">
+			</li>
+			<li class="right">
+				<h4>COMPRA 100% SEGURA</h4>
+				<img src="https://gotaq10.com.br/files/a/2305261645020.webp" alt="Site Seguro" width="250" height="79"  uk-img="loading: lazy">
+			</li>
+		</ul>
+	</div>
+</footer><script>
+	document.getElementById('footer').style.display = 'none';
+	setTimeout(function() {
+		document.getElementById('oferta').style.display = 'block';
+		document.getElementById('footer').style.display = 'block';
+	}, 2724000);
+</script></main>
+</section>
+<script async src="https://gotaq10.com.br/site/libs/main.js?v230525165322"></script>
+</body>
+</html>
